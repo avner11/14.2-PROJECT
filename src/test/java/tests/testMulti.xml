@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MyFirstPro" parallel= "tests" thread-count="6" >
+    <test name="test on chrome" >
+        <parameter name="browserName" value="chrome"/>
+        <classes>
+            <class name="tests.FirstTest"/>
+        </classes>
+    </test> <!--MyFirstPro-->
+    <test name="test on edge" >
+        <parameter name="browserName" value="edge"/>
+        <classes>
+            <class name="tests.testMultipleBrwoser"/>
+        </classes>
+    </test> <!--MyFirstPro-->
+</suite><!--Default Suite-->
